@@ -13,7 +13,7 @@ class Challenges
         // load challenges
         $this->shapes();
         $this->extrude();
-        // $this->library();
+        $this->library();
 
         // $tricksy = new Tricksy();
         // $tricksy->start();
