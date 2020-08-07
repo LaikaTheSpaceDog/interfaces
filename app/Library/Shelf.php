@@ -20,6 +20,11 @@ class Shelf
 
     public function titles() : array
     {
-        return $this->shelf->map(fn($book) => $book->title())->all();
+        $titles = [];
+
+        foreach($this->shelf as $item){
+            $titles[] = $item->title();
+        }
+        return $titles;
     }
 }
