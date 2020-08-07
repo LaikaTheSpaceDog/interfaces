@@ -15,8 +15,8 @@ class Challenges
         $this->extrude();
         $this->library();
 
-        // $tricksy = new Tricksy();
-        // $tricksy->start();
+        $tricksy = new Tricksy();
+        $tricksy->start();
     }
 
     public function shapes()
