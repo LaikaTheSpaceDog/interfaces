@@ -23,6 +23,14 @@ class Library
 
     public function titles() : array
     {
-        return array_merge($this->booklist[0], $this->booklist[1]);
+        $result = [];
+        for ($i = 0; $i < count($this->booklist); $i +=1)
+        {
+            for ($j = 0; $j < count($this->booklist[$i]); $j += 1)
+            {
+                $result[] = $this->booklist[$i][$j];
+            }
+        }
+        return $result;
     }
 }
